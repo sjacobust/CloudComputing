@@ -8,3 +8,5 @@ router.get('/', (req, res) => {
         autor2: "Bryant Gerardo Gonzales Vizcarra"
     })
 });
+
+module.exports = router;
