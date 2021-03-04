@@ -1,0 +1,27 @@
+{
+  "name": "practica5",
+  "version": "1.0.0",
+  "description": "Practica 5 Docker Computo en la Nube",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sjacobust/CloudComputing.git"
+  },
+  "keywords": [
+    "Cloud",
+    "Computing",
+    "Docker"
+  ],
+  "author": "Santiago Jacobus",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sjacobust/CloudComputing/issues"
+  },
+  "homepage": "https://github.com/sjacobust/CloudComputing#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
