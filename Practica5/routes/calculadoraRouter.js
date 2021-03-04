@@ -107,4 +107,23 @@ router.post('/divide', checkParams, (req, res) => {
 
 });
 
+ /* Route to post free. Expects one json fields, operation.
+    This works a little different, the body gets a string with
+    operations like:
+    Example of JSON Body:
+    {
+        "operation": "1 * 2 + 3 - 4"
+    }
+    Expected outcome:
+    { "respuesta": 1 }
+ */
+
+router.post('/free', checkParams, (req, res) => {
+    console.log(req.body);
+    let respuesta = eval(req.body.operation);
+    res.json({ respuesta: respuesta });
+
+});
+
+
 module.exports = router;
