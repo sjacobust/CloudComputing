@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path');
 const router = express.Router();
 
 
@@ -29,6 +30,13 @@ const checkParams = (req, res, next) => {
         res.json({ error: "no args defined"})
     }
 };
+
+ /* Standar Route, just returns index.html
+ */
+
+ router.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, '../index.html'));
+});
 
  /* Route to post suma. Expects one json field, nums.
     It will add (sum) all the numbers in the array and return
